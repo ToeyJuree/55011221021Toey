@@ -1,5 +1,5 @@
 // Playground - noun: a place where people can play
-class KeepUsername{
+class Username{
     var Userpass : [String:String] = ["MMM" : "1234", "Kung" : "5678", "mild" : "91011"]
     let User:String
     
@@ -15,22 +15,22 @@ class KeepUsername{
         }
         return Keeper
     }
-    func Adduser(userAdd:String, passAdd:String){
-        Userpass[userAdd] = passAdd
+    func Add(userAdd:String, passAdd:String){
+        testkeep[userAdd] = passAdd
         
     }
     func Del(userdel:String){
-        Userpass[userdel] = nil
+        testkeep[userdel] = nil
         
     }
-    func Edituser(useredit:String, passedit:String){
-        Userpass[useredit]=passedit
+    func Edit(useredit:String, passedit:String){
+        testkeep[useredit]=passedit
     }
     
     
 }
-let keeppass = KeepUsername(KeepUser : "MMM")
-keeppass.keepUserpass()
-keeppass.Adduser("MMM", passAdd: "1234")
-keeppass.Del("Kung")
-keeppass.Edituser("mild", passedit: "91011")
+let testkeep = Username(Userpass : "MMM")
+testkeep.keepUserpass()
+testkeep.Add("MMM", passAdd: "1234")
+testkeep.Del("Kung")
+testkeep.Edit("mild", passedit: "91011")
