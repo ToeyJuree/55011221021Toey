@@ -8,7 +8,7 @@ class Zoo {
     let animal1:String
     
     init(animal: String){
-    
+        
         self.animal1 = animal
     }
     func Zoofunny() -> String {
@@ -20,7 +20,7 @@ class Zoo {
         }
         return anser
     }
-
+    
 }
 let Zoo1 = Zoo(animal: "Panda")
 Zoo1.Zoofunny()
