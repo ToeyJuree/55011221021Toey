@@ -16,20 +16,20 @@ class Username{
         return Keeper
     }
     func Add(userAdd:String, passAdd:String){
-        testkeep[userAdd] = passAdd
+        Userpass[userAdd] = passAdd
         
     }
     func Del(userdel:String){
-        testkeep[userdel] = nil
+        Userpass[userdel] = nil
         
     }
     func Edit(useredit:String, passedit:String){
-        testkeep[useredit]=passedit
+        Userpass[useredit]=passedit
     }
     
     
 }
-let testkeep = Username(Userpass : "MMM")
+let testkeep = Username(KeepUser : "MMM")
 testkeep.keepUserpass()
 testkeep.Add("MMM", passAdd: "1234")
 testkeep.Del("Kung")
