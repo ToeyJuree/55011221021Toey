@@ -5,6 +5,7 @@ import UIKit
 
 class room {
     var room: [String: String] = ["couch" : "sheeting","wardrobe" : "clothing","latrine" : "water tower"]
+    
     let room1: String
     
     init(room:String){
@@ -14,10 +15,10 @@ class room {
         var anser:String = ""
         for (key,value) in room{
             if(key == room1){
-                anser = value;
+             anser = value
             }
         }
-        return "\(room1) eat \(anser)"
+        return "\(room1)  is \(anser)"
     }
     func Addroom(roomadd:String, composition:String) {
         room[roomadd] = composition
