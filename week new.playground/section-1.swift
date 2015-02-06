@@ -5,9 +5,7 @@ import UIKit
 
 class room {
     var room: [String: String] = ["couch" : "sheeting","wardrobe" : "clothing","latrine" : "water tower"]
-    
     let room1: String
-    
     init(room:String){
         self.room1 = room
     }
